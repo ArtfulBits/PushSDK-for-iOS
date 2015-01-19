@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071A057519BA0EC400E1FAB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A057419BA0EC400E1FAB0 /* Foundation.framework */; };
+		071A058319BA0EC400E1FAB0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A058219BA0EC400E1FAB0 /* XCTest.framework */; };
+		071A058419BA0EC400E1FAB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A057419BA0EC400E1FAB0 /* Foundation.framework */; };
+		071A058919BA0EC400E1FAB0 /* libABPushSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A057119BA0EC400E1FAB0 /* libABPushSDK.a */; };
+		071A058F19BA0EC400E1FAB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 071A058D19BA0EC400E1FAB0 /* InfoPlist.strings */; };
+		071A059119BA0EC400E1FAB0 /* ABPushSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A059019BA0EC400E1FAB0 /* ABPushSDKTests.m */; };
+		071A059C19BA0EF900E1FAB0 /* ABPushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A059B19BA0EF900E1FAB0 /* ABPushNotificationManager.m */; };
+		071A05A019BA163700E1FAB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071A059F19BA163700E1FAB0 /* UIKit.framework */; };
+		07E39B2019C83E8E00752E50 /* ABError.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E39B1919C83E8E00752E50 /* ABError.m */; };
+		07E39B2119C83E8E00752E50 /* ABPushToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E39B1B19C83E8E00752E50 /* ABPushToken.m */; };
+		07E39B2219C83E8E00752E50 /* ABResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E39B1D19C83E8E00752E50 /* ABResult.m */; };
+		07E39B2319C83E8E00752E50 /* ABWebAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E39B1F19C83E8E00752E50 /* ABWebAPI.m */; };
+		07EE7E3219CC15C60057BD51 /* ABPushNotificationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 071A059A19BA0EF900E1FAB0 /* ABPushNotificationManager.h */; };
+		07EE7E3419CC15C60057BD51 /* ABPushNotificationDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 071A059D19BA0F8600E1FAB0 /* ABPushNotificationDelegate.h */; };
+		8411D6C01A25E20000C36541 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8411D6BF1A25E20000C36541 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071A058719BA0EC400E1FAB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071A056919BA0EC400E1FAB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071A057019BA0EC400E1FAB0;
+			remoteInfo = ABPushSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		071A056F19BA0EC400E1FAB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				07EE7E3219CC15C60057BD51 /* ABPushNotificationManager.h in CopyFiles */,
+				07EE7E3419CC15C60057BD51 /* ABPushNotificationDelegate.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071A057119BA0EC400E1FAB0 /* libABPushSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libABPushSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A057419BA0EC400E1FAB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		071A057819BA0EC400E1FAB0 /* ABPushSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABPushSDK-Prefix.pch"; sourceTree = "<group>"; };
+		071A058119BA0EC400E1FAB0 /* ABPushSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABPushSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A058219BA0EC400E1FAB0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		071A058C19BA0EC400E1FAB0 /* ABPushSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ABPushSDKTests-Info.plist"; sourceTree = "<group>"; };
+		071A058E19BA0EC400E1FAB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		071A059019BA0EC400E1FAB0 /* ABPushSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABPushSDKTests.m; sourceTree = "<group>"; };
+		071A059A19BA0EF900E1FAB0 /* ABPushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPushNotificationManager.h; sourceTree = "<group>"; };
+		071A059B19BA0EF900E1FAB0 /* ABPushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPushNotificationManager.m; sourceTree = "<group>"; };
+		071A059D19BA0F8600E1FAB0 /* ABPushNotificationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABPushNotificationDelegate.h; sourceTree = "<group>"; };
+		071A059F19BA163700E1FAB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07E39B1819C83E8E00752E50 /* ABError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABError.h; sourceTree = "<group>"; };
+		07E39B1919C83E8E00752E50 /* ABError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABError.m; sourceTree = "<group>"; };
+		07E39B1A19C83E8E00752E50 /* ABPushToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPushToken.h; sourceTree = "<group>"; };
+		07E39B1B19C83E8E00752E50 /* ABPushToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPushToken.m; sourceTree = "<group>"; };
+		07E39B1C19C83E8E00752E50 /* ABResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABResult.h; sourceTree = "<group>"; };
+		07E39B1D19C83E8E00752E50 /* ABResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABResult.m; sourceTree = "<group>"; };
+		07E39B1E19C83E8E00752E50 /* ABWebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABWebAPI.h; sourceTree = "<group>"; };
+		07E39B1F19C83E8E00752E50 /* ABWebAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABWebAPI.m; sourceTree = "<group>"; };
+		8411D6BF1A25E20000C36541 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071A056E19BA0EC400E1FAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8411D6C01A25E20000C36541 /* CoreLocation.framework in Frameworks */,
+				071A05A019BA163700E1FAB0 /* UIKit.framework in Frameworks */,
+				071A057519BA0EC400E1FAB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A057E19BA0EC400E1FAB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A058319BA0EC400E1FAB0 /* XCTest.framework in Frameworks */,
+				071A058919BA0EC400E1FAB0 /* libABPushSDK.a in Frameworks */,
+				071A058419BA0EC400E1FAB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071A056819BA0EC400E1FAB0 = {
+			isa = PBXGroup;
+			children = (
+				071A057619BA0EC400E1FAB0 /* ABPushSDK */,
+				071A058A19BA0EC400E1FAB0 /* ABPushSDKTests */,
+				071A057319BA0EC400E1FAB0 /* Frameworks */,
+				071A057219BA0EC400E1FAB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071A057219BA0EC400E1FAB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071A057119BA0EC400E1FAB0 /* libABPushSDK.a */,
+				071A058119BA0EC400E1FAB0 /* ABPushSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071A057319BA0EC400E1FAB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8411D6BF1A25E20000C36541 /* CoreLocation.framework */,
+				071A059F19BA163700E1FAB0 /* UIKit.framework */,
+				071A057419BA0EC400E1FAB0 /* Foundation.framework */,
+				071A058219BA0EC400E1FAB0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		071A057619BA0EC400E1FAB0 /* ABPushSDK */ = {
+			isa = PBXGroup;
+			children = (
+				07E39B1719C837B800752E50 /* Web Service */,
+				071A059A19BA0EF900E1FAB0 /* ABPushNotificationManager.h */,
+				071A059B19BA0EF900E1FAB0 /* ABPushNotificationManager.m */,
+				071A059D19BA0F8600E1FAB0 /* ABPushNotificationDelegate.h */,
+				071A057719BA0EC400E1FAB0 /* Supporting Files */,
+			);
+			path = ABPushSDK;
+			sourceTree = "<group>";
+		};
+		071A057719BA0EC400E1FAB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				071A057819BA0EC400E1FAB0 /* ABPushSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071A058A19BA0EC400E1FAB0 /* ABPushSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				071A059019BA0EC400E1FAB0 /* ABPushSDKTests.m */,
+				071A058B19BA0EC400E1FAB0 /* Supporting Files */,
+			);
+			path = ABPushSDKTests;
+			sourceTree = "<group>";
+		};
+		071A058B19BA0EC400E1FAB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				071A058C19BA0EC400E1FAB0 /* ABPushSDKTests-Info.plist */,
+				071A058D19BA0EC400E1FAB0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07E39B1719C837B800752E50 /* Web Service */ = {
+			isa = PBXGroup;
+			children = (
+				07E39B1819C83E8E00752E50 /* ABError.h */,
+				07E39B1919C83E8E00752E50 /* ABError.m */,
+				07E39B1A19C83E8E00752E50 /* ABPushToken.h */,
+				07E39B1B19C83E8E00752E50 /* ABPushToken.m */,
+				07E39B1C19C83E8E00752E50 /* ABResult.h */,
+				07E39B1D19C83E8E00752E50 /* ABResult.m */,
+				07E39B1E19C83E8E00752E50 /* ABWebAPI.h */,
+				07E39B1F19C83E8E00752E50 /* ABWebAPI.m */,
+			);
+			name = "Web Service";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071A057019BA0EC400E1FAB0 /* ABPushSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A059419BA0EC400E1FAB0 /* Build configuration list for PBXNativeTarget "ABPushSDK" */;
+			buildPhases = (
+				071A056D19BA0EC400E1FAB0 /* Sources */,
+				071A056E19BA0EC400E1FAB0 /* Frameworks */,
+				071A056F19BA0EC400E1FAB0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABPushSDK;
+			productName = ABPushSDK;
+			productReference = 071A057119BA0EC400E1FAB0 /* libABPushSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		071A058019BA0EC400E1FAB0 /* ABPushSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A059719BA0EC400E1FAB0 /* Build configuration list for PBXNativeTarget "ABPushSDKTests" */;
+			buildPhases = (
+				071A057D19BA0EC400E1FAB0 /* Sources */,
+				071A057E19BA0EC400E1FAB0 /* Frameworks */,
+				071A057F19BA0EC400E1FAB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071A058819BA0EC400E1FAB0 /* PBXTargetDependency */,
+			);
+			name = ABPushSDKTests;
+			productName = ABPushSDKTests;
+			productReference = 071A058119BA0EC400E1FAB0 /* ABPushSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071A056919BA0EC400E1FAB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Artfulbits;
+			};
+			buildConfigurationList = 071A056C19BA0EC400E1FAB0 /* Build configuration list for PBXProject "ABPushSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 071A056819BA0EC400E1FAB0;
+			productRefGroup = 071A057219BA0EC400E1FAB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071A057019BA0EC400E1FAB0 /* ABPushSDK */,
+				071A058019BA0EC400E1FAB0 /* ABPushSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071A057F19BA0EC400E1FAB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A058F19BA0EC400E1FAB0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071A056D19BA0EC400E1FAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E39B2119C83E8E00752E50 /* ABPushToken.m in Sources */,
+				07E39B2319C83E8E00752E50 /* ABWebAPI.m in Sources */,
+				07E39B2219C83E8E00752E50 /* ABResult.m in Sources */,
+				07E39B2019C83E8E00752E50 /* ABError.m in Sources */,
+				071A059C19BA0EF900E1FAB0 /* ABPushNotificationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A057D19BA0EC400E1FAB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A059119BA0EC400E1FAB0 /* ABPushSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071A058819BA0EC400E1FAB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071A057019BA0EC400E1FAB0 /* ABPushSDK */;
+			targetProxy = 071A058719BA0EC400E1FAB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071A058D19BA0EC400E1FAB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071A058E19BA0EC400E1FAB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		071A059219BA0EC400E1FAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		071A059319BA0EC400E1FAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071A059519BA0EC400E1FAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ABPushSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABPushSDK/ABPushSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		071A059619BA0EC400E1FAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ABPushSDK.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABPushSDK/ABPushSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		071A059819BA0EC400E1FAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABPushSDK/ABPushSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ABPushSDKTests/ABPushSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		071A059919BA0EC400E1FAB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABPushSDK/ABPushSDK-Prefix.pch";
+				INFOPLIST_FILE = "ABPushSDKTests/ABPushSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071A056C19BA0EC400E1FAB0 /* Build configuration list for PBXProject "ABPushSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A059219BA0EC400E1FAB0 /* Debug */,
+				071A059319BA0EC400E1FAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A059419BA0EC400E1FAB0 /* Build configuration list for PBXNativeTarget "ABPushSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A059519BA0EC400E1FAB0 /* Debug */,
+				071A059619BA0EC400E1FAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A059719BA0EC400E1FAB0 /* Build configuration list for PBXNativeTarget "ABPushSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A059819BA0EC400E1FAB0 /* Debug */,
+				071A059919BA0EC400E1FAB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 071A056919BA0EC400E1FAB0 /* Project object */;
+}
